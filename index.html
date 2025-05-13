@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bitácora Web</title>
+  <link rel="stylesheet" href="CSS/Estilo.css" />
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#GRID">GRID</a></li>
+      <li><a href="#UnidadesResponsivas">Unidades Responsivas</a></li>
+      <li><a href="#CalcyClamp">Calc y Clamp</a></li>
+      <li><a href="#Repeat,minmax,auto-fit,auto-fill">Repeat, minmax, auto-fit, auto-fill</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1 class="titulo">Bitácora de Temas</h1>
+
+    <!-- Tema 1 -->
+    <section id="GRID" class="tema">
+      <h2 class="subtitulo">Tema 1: Grid</h2>
+      <div class="contenido">
+        <div class="ideas">
+          <h3>Ideas Principales</h3>
+          <ul>
+            <li>Grid es un sistema de diseño bidimensional basado en cuadrículas.</li>
+            <li>Grid fue creado específicamente para resolver problemas de diseño web complejos.</li>
+            <li>A diferencia de Flexbox, Grid permite estructurar elementos en filas y columnas simultáneamente.</li>
+          </ul>
+        </div>
+        <div class="resumen">
+          <h3>Resumen</h3>
+          <p>Grid Layout permite una estructura precisa en dos dimensiones. Supera limitaciones de métodos como float o position.</p>
+          <p>Los elementos hijos del contenedor se convierten en ítems del grid automáticamente.</p>
+          <p>Las líneas horizontales se llaman "rows" y las verticales "columns".</p>
+        </div>
+        <div class="imagen">
+          <img src="IMG/CSS-GRID-3.png" alt="GRID" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Tema 2 -->
+    <section id="UnidadesResponsivas" class="tema">
+      <h2 class="subtitulo">Tema 2: Unidades Responsivas</h2>
+      <div class="contenido">
+        <div class="ideas">
+          <h3>Ideas Principales</h3>
+          <ul>
+            <li>Unidades absolutas (px, cm, in) representan tamaños fijos.</li>
+            <li>Unidades relativas (% , em, rem) se adaptan al contexto.</li>
+            <li>Unidades de viewport (vw, vh, vmin, vmax) cambian según la ventana.</li>
+          </ul>
+        </div>
+        <div class="resumen">
+          <h3>Resumen</h3>
+          <p>Las unidades de viewport como <code>vw</code> y <code>vh</code> se adaptan al ancho y alto de la pantalla.</p>
+          <p><code>vmin</code> y <code>vmax</code> permiten adaptar el diseño según la orientación del dispositivo.</p>
+          <p><code>dvh</code> y <code>svh</code> proporcionan valores más precisos y estables en móviles.</p>
+        </div>
+        <div class="imagen">
+          <img src="IMG/rwd-porcentajes.png" alt="Unidades Responsivas" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Tema 3 -->
+    <section id="CalcyClamp" class="tema">
+      <h2 class="subtitulo">Tema 3: Calc y Clamp</h2>
+      <div class="contenido">
+        <div class="ideas">
+          <h3>Ideas Principales</h3>
+          <ul>
+            <li><code>calc()</code> permite operaciones matemáticas entre unidades.</li>
+            <li><code>clamp(min, ideal, max)</code> define un rango dinámico.</li>
+            <li>Ambas funciones permiten mayor control sin media queries.</li>
+          </ul>
+        </div>
+        <div class="resumen">
+          <h3>Resumen</h3>
+          <p>Ventajas:</p>
+          <ul>
+            <li>Flexibilidad</li>
+            <li>Responsividad</li>
+            <li>Simplicidad</li>
+          </ul>
+          <p><code>clamp()</code> es ideal para tipografía adaptable.</p>
+          <p>Usar <code>calc()</code> ayuda a combinar porcentajes con píxeles o <code>rem</code>.</p>
+        </div>
+        <div class="imagen">
+          <img src="IMG/css-clamp-banner_1543_592_40.jpg" alt="Calc y Clamp" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Tema 4 -->
+    <section id="Repeat,minmax,auto-fit,auto-fill" class="tema">
+      <h2 class="subtitulo">Tema 4: Repeat, Minmax, Auto-fill</h2>
+      <div class="contenido">
+        <div class="ideas">
+          <h3>Ideas Principales</h3>
+          <ul>
+            <li>Grid permite usar funciones como <code>repeat()</code> para reducir código repetido.</li>
+            <li><code>minmax()</code> establece un tamaño mínimo y máximo.</li>
+            <li><code>auto-fill</code> y <code>auto-fit</code> ayudan a distribuir mejor las columnas.</li>
+          </ul>
+        </div>
+        <div class="resumen">
+          <h3>Resumen</h3>
+          <p>Estas funciones permiten diseños fluidos y adaptables con menos media queries. Se adaptan al contenedor automáticamente.</p>
+        </div>
+        <div class="imagen">
+          <img src="IMG/Screenshot 2025-05-12 141000.png" alt="Unidades CSS" />
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script defer src="Java/Script.js"></script>
+</body>
+</html>
